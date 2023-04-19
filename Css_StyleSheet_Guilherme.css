@@ -58,19 +58,24 @@ body {
     height: 95vh;
     float: center;
     background-color: #0a4b75;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
 }
 
 main {
     float:inherit;
     width: 90vw;
     height: 75vh;
-}
+    }
 
 article {
     float: center;
     background-color: #1e6495;
     padding: 20px 20px;
     grid-area: auto;
+    min-height: calc(100vh - 70px);
+    flex:1 ;
 }
 
 form{
@@ -82,4 +87,12 @@ footer {
     align-self: end;
     text-align: end;
     color: white;
+    height: 50px;
 }
+
+ul{}
+
+Img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
