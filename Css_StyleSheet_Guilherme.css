@@ -72,6 +72,10 @@ article {
     grid-area: auto;
 }
 
+form{
+    align-content:flex-end;    
+}
+
 footer {
     float: inline-end;
     align-self: end;
