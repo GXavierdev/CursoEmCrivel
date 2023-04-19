@@ -18,7 +18,7 @@ h2 {
 
 h3 {
     color: black;
-    text-align: center;
+    
     font-size: 20px;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 main {
-    float: center;
+    float:inherit;
     width: 90vw;
     height: 75vh;
 }
