@@ -1,5 +1,6 @@
 title {
     background-color: #939473;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -8,12 +9,14 @@ h1 {
     text-align: center;
     font-size: 36px;
     font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h2 {
     text-align: center;
     color: rgb(176, 206, 213);
     font-size: 18;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
@@ -21,12 +24,28 @@ h3 {
     background-color: #0a4b75;
     color: rgb(176, 206, 213);
     font-size: 18;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+    text-align:end;
+    background-color: #0a4b75;
+    color: rgb(176, 206, 213);
+    font-size: 18;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ListIndex{
+    color:#fb6f24;
+    font-size: 18pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 p {
     font-size: 24px;
     color: rgb(176, 206, 213);
     align-content: center;
+    font-family:'Times New Roman', Times, serif;
 }
 
 nav {
@@ -87,12 +106,18 @@ footer {
     align-self: end;
     text-align: end;
     color: white;
-    height: 50px;
+    height: 10px;
 }
-
 
 
 Img.centered {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto 
+}
+
+#NeadLogo{
+    display:block ;
+    margin-left: auto;
+    margin-right: auto;
+}
