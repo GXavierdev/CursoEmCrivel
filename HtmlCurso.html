@@ -119,32 +119,43 @@
                 <p>Avaliações para passagem de unidade</p>
             </ul>
 
-            <h3>Vagas</h3>          
-           
-            <p id="qtdAlunosHtml"> </p>            
+            <h3>Vagas</h3>
 
-            <script> function qtdAlunosHtml (){
-                document.getElementById("qtdAlunosHtml").innerHTML = 10 ;                 
-            }
+            <p id="qtdAlunosHtml"> </p>
+
+            <script> function qtdAlunosHtml() {
+                    document.getElementById("qtdAlunosHtml").innerHTML = 10;
+                }
             </script>
 
             <h3>Matricular Neste Curso</h3>
             <label for="name">Nome</label><br>
             <input type="text" name="name_input" id="name"><br>
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf_input" id="cpf">
-            emial
-            <p>
-                <button type="button" onclick="MatricularCursoHtml">Matricular</button>
-            </p>
+            <label for="cpf">CPF</label> <br>
+            <input type="text" name="cpf_input" id="cpf"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email_input" id="email"><br>
 
+            <script>
+                var MatriculasHtml = 0;
+                var LimiteMatriculasHtml = 10;
 
+                function MatricularCursoHtml(){
+                               
+                MatriculasHtml = MatriculasHtml + 1;
+                document.getElementById("qtdAlunosHtml").innerHTML = LimiteMatriculasHtml - MatriculasHtml;
+                alert("matricula Efetuada. Qtd Matrículas" + MatriculasHtml);
+                }
+            </script>
+            
+            <button type="button" onclick="MatricularCursoHtml()">Matricular</button>
+            
         </article>
         <footer>
             <h4>contate-nos no seguinte email: guilherme.savio.leandro@gmail.com</h4>
         </footer>
 
-      
+
     </main>
 
 
