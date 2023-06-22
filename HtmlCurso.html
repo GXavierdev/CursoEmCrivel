@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="Css_StyleSheet_Guilherme.css">
 </head>
 
-<body>
+
+<body onload="qtdAlunosHtml()">
     <header>
         <div class="Title">
             <h1>Sobre nosso curso de HTML</h1>
@@ -118,18 +119,20 @@
                 <p>Avaliações para passagem de unidade</p>
             </ul>
 
-            <h3>Vagas</h3>
-            <script>
-                qtdAlunosHtml = 5;
+            <h3>Vagas</h3>          
+           
+            <p id="qtdAlunosHtml"> </p>            
+
+            <script> function qtdAlunosHtml (){
+                document.getElementById("qtdAlunosHtml").innerHTML = 10 ;                 
+            }
             </script>
-            <p>qtdAlunosHtml alunos</p>
 
             <h3>Matricular Neste Curso</h3>
-
-            Nome
             <label for="name">Nome</label><br>
-            <input type="text" name="name" id="name"><br>
-            cpf
+            <input type="text" name="name_input" id="name"><br>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf_input" id="cpf">
             emial
             <p>
                 <button type="button" onclick="MatricularCursoHtml">Matricular</button>
@@ -141,9 +144,10 @@
             <h4>contate-nos no seguinte email: guilherme.savio.leandro@gmail.com</h4>
         </footer>
 
+      
     </main>
 
-<script src="Scripts.js"></script>
+
 </body>
 
 </html>
