@@ -98,7 +98,8 @@ article {
 }
 
 form{
-    align-content:flex-end;    
+    align-content:flex-end;   
+    border: #939473; 
 }
 
 footer {

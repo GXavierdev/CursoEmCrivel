@@ -119,11 +119,20 @@
             </ul>
 
             <h3>Vagas</h3>
-            <p>10 alunos</p>
+            <script>
+                qtdAlunosHtml = 5;
+            </script>
+            <p>qtdAlunosHtml alunos</p>
 
             <h3>Matricular Neste Curso</h3>
+
+            Nome
+            <label for="name">Nome</label><br>
+            <input type="text" name="name" id="name"><br>
+            cpf
+            emial
             <p>
-                <button type="submit">Matricular</button>
+                <button type="button" onclick="MatricularCursoHtml">Matricular</button>
             </p>
 
 
@@ -134,7 +143,7 @@
 
     </main>
 
-
+<script src="Scripts.js"></script>
 </body>
 
 </html>
