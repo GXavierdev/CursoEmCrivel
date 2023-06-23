@@ -119,20 +119,25 @@
                 <p>Avaliações para passagem de unidade</p>
             </ul>
 
-            <h3>Vagas Disponíveis</h3>
+            <h3>Vagas Disponíveis/Preenchidas</h3>
 
-            <p id="qtdAlunosHtml"> </p>
+            <p id="qtdAlunosHtml"> 10/0</p>
  
             <h3>Matricular Neste Curso</h3>
+            <form name="matricularHtml"  action="">
             <label for="name">Nome</label><br>
-            <input type="text" id="nameStudentHtmlInput"><br>
+            <input type="text" name="nameStudentHtmlInput" value=""><br>
             <label for="cpf">CPF</label> <br>
-            <input type="text" name="cpf_input" id="cpfStudentHtmlInput"><br>
+            <input type="text" name="cpfStudentHtmlInput" value=""><br>
             <label for="email">Email</label><br>
-            <input type="email" name="email_input" id="emailStudentHtmlInput"><br>
+            <input type="email" name="emailStudentHtmlInput" value=""><br><br>
 
             <button type="button" onclick="MatricularCursoHtml()">Matricular</button>
-            
+        </form>
+
+        <h3>Alunos Matriculados</h3>
+
+        <p id="listaAlunosMatriculadosHtml">  </p>
         </article>
 
         <footer>

@@ -1,47 +1,66 @@
 let MatriculasHtml = 0;
 let LimiteMatriculasHtml = 10;
-let  cpfStudentHtmlVariable ;
-let nameStudentHtmlVariable ;
-let emailStudentHtmlVariable;
-
+var cpfStudentHtmlVariable = "";
+var nameStudentHtmlVariable = "";
+var emailStudentHtmlVariable = "";
+var vagasHtml = LimiteMatriculasHtml - MatriculasHtml;
+var alunosMatriculadosHtml = [];
 
 function MatricularCursoHtml() {
+    cpfStudentHtmlVariable = document.forms['matricularHtml']['cpfStudentHtmlInput'].value;
+    nameStudentHtmlVariable = document.forms['matricularHtml']['nameStudentHtmlInput'].value;
+    emailStudentHtmlVariable = document.forms['matricularHtml']['emailStudentHtmlInput'].value;
 
-    validarCpfHtml();
+
     validarNomeHtml();
-    validarEmailHtml()
+    validarCpfHtml();    
+    validarEmailHtml();
+
+if(validarCpfHtml() === true && validarEmailHtml() === true && validarNomeHtml() === true && MatriculasHtml < LimiteMatriculasHtml) {
     MatriculasHtml++;
-    document.getElementById("qtdAlunosHtml").innerHTML = LimiteMatriculasHtml - MatriculasHtml;
-    alert("matricula Efetuada. Qtd Matrículas");
+    vagasHtml = LimiteMatriculasHtml - MatriculasHtml
+    document.getElementById("qtdAlunosHtml").innerHTML = (vagasHtml + "/" + MatriculasHtml) ;
+    alert("matricula Efetuada");
+    alunosMatriculadosHtml.push(nameStudentHtmlVariable);
+    document.getElementById("listaAlunosMatriculadosHtml").innerHTML = alunosMatriculadosHtml.toString();
+}
+else if (MatriculasHtml == LimiteMatriculasHtml){
+    alert("Vagas Esgostadas")
+} else{
+
+}
 }
 
 
 function qtdAlunosHtml() {
-    document.getElementById("qtdAlunosHtml").innerHTML = LimiteMatriculasHtml;
+    document.getElementById("qtdAlunosHtml").innerHTML = (vagasHtml + "/" + MatriculasHtml) ;
 }
 
 function validarNomeHtml() {
     
-    if (document.getElementById("nameStudentHtmlInput").innerHTML == "") {
+    if (nameStudentHtmlVariable==""){
+         alert("Prencha o nome");
+        } else{
+            return true;
+        }
+    }
 
-        alert("Prencha o nome");
+
+function validarCpfHtml() {
+       if (cpfStudentHtmlVariable=="") {
+        alert("Prencha o CPF");
+    }
+        else{ 
+            return true;
     }
 
 }
 
 function validarEmailHtml() {
-    
-    if (document.getElementById("emailStudentHtmlInput").innerHTML == "") {
-
+    if (emailStudentHtmlVariable == "") {
         alert("Prencha o email");
     }
- }
-
-function validarCpfHtml() {
-   
-    if (document.getElementById("CpfAlunoHtmlInput").innerHTML == "") {
-
-        alert("Prencha o CPF");
+    else {
+        return true;
     }
-
 }
