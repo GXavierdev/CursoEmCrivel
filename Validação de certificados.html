@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validação Certificados</title>
   <link rel="stylesheet" href="Css_StyleSheet_Guilherme.css">
+
+
 </head>
 
 <body>
@@ -27,23 +29,24 @@
 
 
   <main>
-    <article>
-      <form style="width:auto;height:auto;">
-        <label for="SerialNumber">Número de Série:</label><br>
-        <input type="text" id="SerialNumber" name="Número de Série" value="2021-15236987999-98"><br>
-        <label for="Password">Codigo de Senha:</label><br>
-        <input type="text" id="Password" name="Senha" value="5698984"><br><br>
-        <input type="submit" value="Validar">
-      </form>
-    
-    </article>
 
-<footer>
-  <h4>contate-nos no seguinte email: guilherme.savio.leandro@gmail.com</h4>  
-</footer>
-  
-</main>
-  
+    <script src="ScriptsValidacaoCertificados.js"> </script>
+
+
+    <article>
+      <form name="ValidacaoCertificados" style="width:auto;height:auto;">
+        <label for="SerialNumber">Número de Série:</label><br>
+        <input type="text" name="SerialNumber" value="2021-15236987999-98"><br>
+        <label for="Password">Codigo de Senha:</label><br>
+        <input type="text" name="Password" value="5698984"><br><br>
+
+      </form>
+      <button type="button" onclick="validarCertificado()">Validar</button>
+    </article>
+    <footer>
+      <h4>contate-nos no seguinte email: guilherme.savio.leandro@gmail.com</h4>
+    </footer>
+  </main>
 </body>
 
 </html>

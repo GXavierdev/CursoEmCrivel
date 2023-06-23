@@ -26,27 +26,27 @@
   <main>
     <article>
 
-      <form action="" method="post">
+      <form name="Cadastro" method="">
 
         <label for="Name">Nome:</label><br>
-        <input type="text" id="Name" name="Nome do aluno" value="João da Silva Moura"><br>
+        <input type="text" name="nome" value="João da Silva Moura"><br>
         <label for="cpf">CPF</label><br>
-        <input type="number"><br>
+        <input type="number" id="cpf" name="cpf"><br>
         <label for="birth">Data de Nascimento</label><br>
-        <input type="date" name="birth" id="birth"><br>
+        <input type="date" name="dataNascimento" id="birth"><br>
         <label for="gender">Sexo</label><br>
-        <select id="gender" name="gênero">
+        <select id="gender" name="sexo">
           <option value="Masculino">Masculino</option>
           <option value="Feminino">Feminino</option>
           <option value="Outros"></option>
         </select><br>
         <label for="email">Email</label><br>
-        <input type="email" id="emial" value="joao@gmail.com"><br>
+        <input type="email" id="emial" name="email" value="joao@gmail.com"><br>
         <label for="phone">Telefone</label><br>
-        <input type="tel" name="cellphone" id="phone"><br>
+        <input type="tel" name="telefone" id="phone"><br>
         <label for="Password">Password:</label><br>
-        <input type="text" id="Password" name="Senha" value="***"><br><br>
-        <button type="submit">Cadastrar</button>
+        <input type="password" id="Password" name="Senha" value="***"><br><br>
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
       </form>
     </article>
 
@@ -55,7 +55,7 @@
     </footer>
 
   </main>
-
+<script src="ScriptsLogin.js"></script>
 </body>
 
 </html>

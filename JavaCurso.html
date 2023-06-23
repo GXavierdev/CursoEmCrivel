@@ -61,8 +61,25 @@
             <ul><p> Material Didático em PDF </p></ul>
             <ul><p>Avaliações para passagem de unidade</p></ul>
 
-            <h3>Vagas</h3>
-            <p>10 alunos</p>
+            <h3>Vagas Disponíveis/Preenchidas</h3>
+
+            <p id="qtdAlunosJava"> 10/0</p>
+ 
+            <h3>Matricular Neste Curso</h3>
+            <form name="matricularJava"  action="">
+            <label for="name">Nome</label><br>
+            <input type="text" name="nameStudentJavaInput" value=""><br>
+            <label for="cpf">CPF</label> <br>
+            <input type="text" name="cpfStudentJavaInput" value=""><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="emailStudentJavaInput" value=""><br><br>
+
+            <button type="button" onclick="MatricularCursoJava()">Matricular</button>
+        </form>
+
+        <h3>Alunos Matriculados</h3>
+
+        <p id="listaAlunosMatriculadosJava">  </p>
         
         </article>
         
@@ -72,7 +89,7 @@
 
 </main>
 
-
+<script src="ScriptsJavaCoursePage.js"></script>
 
 
 </body>

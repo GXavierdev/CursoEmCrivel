@@ -91,9 +91,25 @@
                 <p>Avaliações para passagem de unidade</p>
             </ul>
 
-            <h3>Vagas</h3>
-            <p>10 alunos</p>
+            <h3>Vagas Disponíveis/Preenchidas</h3>
 
+            <p id="qtdAlunosPython"> 10/0</p>
+ 
+            <h3>Matricular Neste Curso</h3>
+            <form name="matricularPython"  action="">
+            <label for="name">Nome</label><br>
+            <input type="text" name="nameStudentPythonInput" value=""><br>
+            <label for="cpf">CPF</label> <br>
+            <input type="text" name="cpfStudentPythonInput" value=""><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="emailStudentPythonInput" value=""><br><br>
+
+            <button type="button" onclick="MatricularCursoPython()">Matricular</button>
+        </form>
+
+        <h3>Alunos Matriculados</h3>
+
+        <p id="listaAlunosMatriculadosPython">  </p>
         </article>
 
     <footer>
@@ -101,6 +117,8 @@
     </footer>
 
 </main>
+
+<script src="ScriptsPythonCoursePage.js"></script>
 
 </body>
 
